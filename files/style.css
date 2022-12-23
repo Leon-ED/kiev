@@ -6,7 +6,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    min-height: 1000vh;
+    min-height: 100;
+    background-color: rgb(24, 24, 24);
 }
 
 
@@ -37,6 +38,7 @@ body {
 
 
 .content .card{
+    color : #fff;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     padding: 10px;
@@ -98,7 +100,7 @@ article{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0,0.9);
 }
 
 article h1{
@@ -123,12 +125,23 @@ article p::first-letter{
 }
 
 @media screen and (max-width: 768px) {
+    *{
+        overflow-x: hidden;
+    }
     nav{
         position: relative;
     }
 
     .cards{
         display: none;
+    }
+    article{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    article p{
+        width: 90%;
     }
 
     .flex-container {
