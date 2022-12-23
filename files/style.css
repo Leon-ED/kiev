@@ -1,0 +1,141 @@
+*{
+    scroll-behavior: smooth;
+    scroll-margin: 120px;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 1000vh;
+}
+
+
+.content {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content video{
+    width: 100%;
+    display: block;
+}
+
+.content section{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 60%;
+    flex-wrap: wrap;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+.content .card{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 120px;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+nav h1{
+    color : rgb(0, 119, 255);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px 0 20px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* position cards at the bottom of the video */
+#cards {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+article{
+    margin-top : 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+article h1{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5px 0 50px 0;
+}
+
+article p{
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height:  1.5;
+    width: 50%;
+    margin: 0;
+}
+
+article p::first-letter{
+    font-size: 3rem;
+    color: rgb(255, 102, 0);
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        position: relative;
+    }
+
+    .cards{
+        display: none;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+    

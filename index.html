@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez Kiev, la simulation de guerre la plus réaliste du 21ème siècle!">
+    <meta name="keywords" content="Kiev, Simulation, Guerre, Stratégie, 21ème siècle">
+    <meta name="author" content="BUT 2 Informatique, Projet KIEV">
+    <link rel="stylesheet" href="./files/style.css">
+    <title>Kiev</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <nav class="flex-container">
+        <a href="#top">
+            <h1>Discover Kiev</h1>
+        </a>
+        <div class="flex-container">
+            <a href="#history">
+                <h2>History</h2>
+            </a>
+            <a href="#places">
+                <h2>Places of interest</h2>
+            </a>
+            <a href="#warzone">
+                <h2>Trips</h2>
+            </a>
+            <a href="#warzone">
+                <h2>Danger Zone</h2>
+            </a>
+            <a href="#about">
+                <h2>About us</h2>
+            </a>
+        </div>
+    </nav>
+    <div class="content">
+        <video autoplay muted id="video" onended="videoEnd()">
+            <source src="./files/intro.mp4" type="video/mp4">
+        </video>
+        <section id="cards" style="display: none;">
+            <div class="card">
+                <h1>Capital of Ukraine</h1>
+                <p>Kiev is the capital of Ukraine</p>
+            </div>
+            <div class="card">
+                <h1>Population</h1>
+                <p>Kiev is the largest city in Ukraine<br>with 2.8 millions residents more than in Paris </p>
+            </div>
+            <div class="card">
+                <h1>Residents</h1>
+                <p>Its residents are called Kyivan or Kievan</p>
+            </div>
+            <div class="card">
+                <h1>Area</h1>
+                <p>Its area is 839km² <br> with a population density of 3,299 citizens/km²</p>
+            </div>
+        </section>
+    </div>
+    <article id="history">
+        <h1>The history of Kiev</h1>
+        <p>
+            Kiev, also known as Kyiv, is the capital and largest city of Ukraine.<br> It is located in the north central
+            part of the country, on the Dnieper River. The city has a long and rich history dating back to the 9th
+            century, when it was founded by the East Slavs as a trading center.<br>
+
+            In the 10th and 11th centuries, Kiev became the capital of the Kievan Rus, a powerful medieval state that
+            played a significant role in the development of Eastern Europe. <br>The city became a major cultural and
+            political center, and its rulers, the Grand Princes of Kiev, were influential figures in the region.<br>
+
+            During the 13th and 14th centuries, Kiev experienced a period of decline as the Mongols invaded and
+            conquered the city. It was later annexed by the Polish-Lithuanian Commonwealth in the 16th century, and then
+            passed to the Russian Empire in the 18th century.<br>
+
+            In the 20th century, Kiev played a significant role in the Russian Revolution and the Ukrainian independence
+            movement.<br> The city was the site of the Ukrainian independence referendum in 1991, which resulted in the
+            country's independence from the Soviet Union.
+
+            Today, Kiev is a vibrant and modern city with a rich cultural heritage. It is home to numerous museums,
+            churches, and other cultural landmarks, and is a popular tourist destination in Eastern Europe.
+        </p>
+
+    </article>
+
+
+
+
+
+    <script>
+        function videoEnd() {
+            // getviewport
+            var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+            if (viewportWidth < 768) {
+                return;
+            }
+            document.getElementById("cards").style.display = "flex";
+        }
+    </script>
+</body>
+
+</html>
