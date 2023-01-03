@@ -236,7 +236,10 @@ figure figcaption{
 }
 
 
-
+.badge img {
+    margin-top: 670px;
+    position: fixed;
+}
 
 
 
