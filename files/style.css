@@ -276,5 +276,8 @@ figure figcaption{
         height: 100%;
         object-fit: cover;
     }
+    .badge{
+        display: none;
+    }
 }
     
